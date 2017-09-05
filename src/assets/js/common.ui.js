@@ -39,7 +39,7 @@ $(document).ready(function() {
             slideItems: '.my-slider-item',
             slideContainer: '.my-slider-list',
             slideDistance: 3,
-            slideDuratin: 800,
+            slideDuratin: 300,
             resizable: true,
             pause: false
         });
