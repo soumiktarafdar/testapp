@@ -48,7 +48,7 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .header-top a.btn.btn-red,
 .header-top a.btn.btn-blue {width: 125px; border-radius: 25px; -o-border-radius: 25px; -ms-border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px;}
 .header-top a.btn.btn-red:hover,
-.header-top a.btn.btn-blue:hover {background: #ffffff; color: #000000;}
+.header-top a.btn.btn-blue:hover {background: #000000; color: #ffffff;}
 .header-top a.btn.btn-red i,
 .header-top a.btn.btn-blue i {font-size: 18px; margin-right: 5px;}
 
@@ -82,9 +82,18 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .navbar-default .navbar-nav > .open > a:active {background: none; color: #555;}
 
 /*--- BG Banner --*/
-.bg {background-position: center center; background-repeat: no-repeat; background-size: cover; -o-background-size: cover; -ms-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; padding: 100px 0;}
+.bg {background-position: center center; background-repeat: no-repeat; background-size: cover; -o-background-size: cover; -ms-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; padding: 100px 0; position: relative;}
 .bg-login {background-image: url('../images/bg-login.jpg');}
 .bg-register {background-image: url('../images/bg-register.jpg');}
+.bg-home {background-image: url('../images/bg-home.jpg');}
+
+/*--- Caption ---*/
+.bg-caption {position: absolute; top: 28.5%; left: 28.5%;}
+.bg-caption h2 {font-family: 'Biko', sans-serif; font-size: 54px; color: #525252; font-weight: 900; text-transform: uppercase; margin-top: 15px;}
+.bg-caption h3 {font-size: 37px; color: #525252;}
+.bg-caption h2 span,
+.bg-caption h3 span {color: #db3736;}
+.bg-caption p {background: #12498a; color: #ffffff; margin-top: 15px; padding: 5px 15px; display: inline-block; border-radius: 25px; -o-border-radius: 25px; -ms-border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px;}
 
 /*--- Quick Form ---*/
 .quick-form {position: relative; background: rgba(255, 255, 255, 0.5); width: 650px; margin: 0 auto; padding: 65px 0 25px 0; border-radius: 15px; -o-border-radius: 15px; -ms-border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border: 1px solid #ffffff; text-align: center;}
@@ -124,6 +133,15 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 
 .quick-form hr {border-color: #a6a6a6; opacity: 0.6;}
 
+.quick-form.home {background: rgba(229, 208, 186, 0.5); width: 450px; margin: 0 0 0 2%; padding: 0; text-align: left;}
+.quick-form.home .form-title {background: #5078a6; padding: 25px; border-top-left-radius: 15px; -o-border-top-left-radius: 15px; -ms-border-top-left-radius: 15px; -moz-border-top-left-radius: 15px; -webkit-border-top-left-radius: 15px; border-top-right-radius: 15px; -o-border-top-right-radius: 15px; -ms-border-top-right-radius: 15px; -moz-border-top-right-radius: 15px; -webkit-border-top-right-radius: 15px;}
+.quick-form.home h1 {font-family: 'Ubuntu', sans-serif; font-size: 42px; font-weight: 600; color: #ffffff; text-transform: uppercase; margin-bottom: 5px;}
+.quick-form.home p {font-family: 'Ubuntu', sans-serif; font-size: 17px; color: #ffffff; letter-spacing: 1px;}
+.quick-form.home form {padding: 25px;}
+.quick-form.home .form-group {margin-bottom: 0;}
+.quick-form.home label {font-family: 'Biko', sans-serif; font-size: 20px; font-weight: 400; text-transform: uppercase; margin-bottom: 0;}
+.quick-form.home .form-control {padding: 6px 12px 6px 12px; height: 45px;}
+
 /*--- Main ---*/
 .main {background: #ffffff; padding: 60px 0;}
 .main.padding-b {padding-bottom: 110px;}
@@ -146,8 +164,6 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .main img + h3,
 .main label + div {margin-top: 15px;}
 
-.main .title-icon {background: url('../images/icon.png') no-repeat; background-size: 56px; padding-left: 65px;}
-
 .main .border-bottom::after {content: ''; border-bottom: 2px solid #db3736; width: 35px; display: block; left: 0; right: 0;}
 .main .border-bottom-center::after {content: ''; border-bottom: 2px solid #db3736; width: 35px; display: block; left: 0; right: 0; margin: 5px auto 0;}
 
@@ -160,6 +176,9 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .main .btn-danger {font-family: 'Ubuntu', sans-serif; font-size: 22px; font-weight: 500; background: #db3736; color: #ffffff; padding: 10px; width: 350px;}
 
 .bg-grey {background: #e8e8e8;}
+
+.bg-red-blue .title-icon {background: url('../images/icon.png') no-repeat; background-size: 87px; padding-left: 100px; font-size: 50px;}
+.bg-red-blue .title-icon span {font-size: 32px;}
 .bg-red-blue h2,
 .bg-red-blue h2 span,
 .bg-red-blue p {color: #ffffff;}
@@ -171,11 +190,25 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .bg-red-blue > .row > [class*='col-'] {padding: 60px 35px;}
 .bg-red-blue > .row > [class*='col-']:nth-child(1) {background: #db3736;}
 .bg-red-blue > .row > [class*='col-']:nth-child(2) {background: #12498a;}
-
-.bg-red-blue label {font-weight: 400; color: #e7e7e9;}
-.bg-red-blue label [type*='radio'] {margin-top: 7px;}
+.bg-red-blue label {font-size: 14px; font-weight: 400; color: #e7e7e9;}
+.bg-red-blue label [type*='radio'] {margin-top: 4px;}
 .bg-red-blue #day.form-control,
-.bg-red-blue #month.form-control {width: 49%; display: inline; padding-left: 0; padding-right: 0;}
+.bg-red-blue #month.form-control {width: 50%; display: inline; padding-left: 0; padding-right: 0;}
+.bg-red-blue #day.form-control {border-top-left-radius: 0; border-bottom-left-radius: 0; border-left: none; margin-left: -5px;}
+.bg-red-blue #month.form-control {border-top-right-radius: 0; border-bottom-right-radius: 0; border-right: none;}
+.bg-red-blue select {background: #ffffff url('../images/arrow-select.png') calc(100% - 10px) 50% no-repeat; appearance: none; -o-appearance: none; -ms-appearance: none; -moz-appearance: none; -webkit-appearance: none; padding: 6px; position: relative;}
+.bg-red-blue select:focus {border: 1px solid #ccc; box-shadow: none; -o-box-shadow: none; -ms-box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+/* CAUTION: IE Hackery Ahead */
+.bg-red-blue select::-ms-expand {
+    display: none; /* Remove Default Arrow on ie10 and ie11 */
+}
+/* Target Internet Explorer 9 to Undo The Custom Arrow */
+@media screen and (min-width:0\0) {
+    .bg-red-blue select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
 .bg-red-blue .form-blue {background: #0d3a70; border-color: #0d3a70; color: #ffffff;}
 .bg-red-blue .btn-group {display: block;}
 .bg-red-blue .btn-group .btn {display: inline; width: calc(50% - 5px);}
@@ -185,12 +218,10 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 .bg-image-1 {background: #f3f2f2 url('../images/bg-image-1.jpg') bottom center no-repeat; background-size: cover; -o-background-size: cover; -ms-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;}
 
 /*--- Partners ---*/
-.partners {background: #ebebeb; padding: 25px 0;}
-.partners ul {display: table; width: 90%; margin: 0 auto; padding: 0;}
-.partners ul li {list-style: none; display: table-cell; text-align: center;}
-.partners ul li:nth-child(1),
-.partners ul li:nth-child(2) {text-align: left;}
-.partners ul li img {max-width: 100%; padding: 0 15px;}
+.my-slider {background: #ebebeb; width: 100%; padding: 25px 0;}
+.my-slider ul {width: 70%; margin: 0 auto; padding: 0; overflow: hidden;}
+.my-slider ul li {float: left; list-style: none;}
+.my-slider ul li img {max-width: 100%; padding: 0 15px;}
 
 ::-webkit-input-placeholder {color: #969696; /* Chrome/Opera/Safari */}
 ::-moz-placeholder {color: #969696; /* Firefox 19+ */}
@@ -216,7 +247,7 @@ footer p + p,
 footer ul li:nth-child(n+2),
 footer p + .btn {margin-top: 15px;}
 footer figure {width: 100%; padding: 50px 0; text-align: center;}
-footer figure img {width: 150px;}
+footer figure img {width: 135px;}
 footer nav {border-top: 2px solid #9a9898; padding: 25px 0;}
 footer nav ul {margin: 0; padding: 0;}
 footer nav ul:nth-child(1) {float: left;}
@@ -231,9 +262,31 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
 .scrollToTop {position: absolute; width: 50px; height: 45px; line-height: 50px; font-weight: bold; text-align: center; background: #12498a; color: #ffffff; text-decoration: none; top: 0; left: 0; right: 0; margin: -45px auto 0; border-top-left-radius: 5px; -o-border-top-left-radius: 5px; -ms-border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -o-border-top-right-radius: 5px; -ms-border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px; transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; z-index: 1;}
 .scrollToTop:hover {line-height: 40px; color: #ffffff; text-decoration: none;}
 
-/* ------------------------ Media LAYOUT (DESKTOP/1900PX) ------------------------ */
-@media (max-width: 1900px) {
-    
+/* ------------------------ Media LAYOUT (DESKTOP/1600PX) ------------------------ */
+@media (min-width: 1600px) and (max-width: 1799px) {
+    /*--- Caption ---*/
+    .bg-caption {top: 28.5%; left: 32%;}
+}
+
+/* ------------------------ Media LAYOUT (DESKTOP/1200PX) ------------------------ */
+@media (min-width: 1360px) and (max-width: 1599px) {
+    /*--- BG Banner --*/
+    .bg {padding: 80px 0;}
+
+    /*--- Caption ---*/
+    .bg-caption {top: 27%; left: 33%;}
+    .bg-caption h2 {font-size: 48px;}
+    .bg-caption h3 {font-size: 32px;}
+    .bg-caption p {font-size: 16px;}
+
+    /*--- Quick Form ---*/
+    .quick-form.home {width: 400px;}
+    .quick-form.home .form-title {padding: 20px;}
+    .quick-form.home h1 {font-size: 38px;}
+    .quick-form.home p {font-size: 15px; letter-spacing: 1;}
+    .quick-form.home form {padding: 20px;}
+    .quick-form.home label {font-size: 16px;}
+    .quick-form.home .form-control {height: 40px;}
 }
 
 /* ------------------------ Media LAYOUT (DESKTOP/1200PX) ------------------------ */
@@ -247,6 +300,31 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
     .navbar-inverse .navbar-brand img {width: 120px;}
     .custom-nav > .navbar-nav {margin: 20px 0 0;}
     .custom-nav > .navbar-nav > li + li {margin-left: 30px;}
+
+    /*--- BG Banner --*/
+    .bg {padding: 80px 0;}
+
+    /*--- Caption ---*/
+    .bg-caption {top: 27%; left: 33%;}
+    .bg-caption h2 {font-size: 42px;}
+    .bg-caption h3 {font-size: 29px;}
+    .bg-caption p {font-size: 14px;}
+
+    /*--- Quick Form ---*/
+    .quick-form.home {width: 350px;}
+    .quick-form.home .form-title {padding: 20px;}
+    .quick-form.home h1 {font-size: 33px;}
+    .quick-form.home p {font-size: 15px; letter-spacing: 0;}
+    .quick-form.home form {padding: 20px;}
+    .quick-form.home label {font-size: 16px;}
+    .quick-form.home .form-control {height: 40px;}
+
+    /*--- Main ---*/
+    .bg-red-blue .title-icon {background-size: 70px; padding-left: 85px; font-size: 42px;}
+    .bg-red-blue .title-icon span {font-size: 28px;}
+
+    /*--- Footer ---*/
+    footer figure img {width: 120px;}
 }
 
 /* ------------------------ Media LAYOUT (TABLET/1024PX) ------------------------ */
@@ -271,6 +349,39 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
     .custom-nav > .navbar-nav > li > a,
     .custom-nav .dropdown-menu > li > a {font-size: 14px;}
     .custom-nav > .navbar-nav > li + li {margin-left: 28px;}
+
+    /*--- BG Banner --*/
+    .bg {padding: 80px 0;}
+
+    /*--- Caption ---*/
+    .bg-caption {top: 27%; left: 33%;}
+    .bg-caption h2 {font-size: 34px;}
+    .bg-caption h3 {font-size: 24px;}
+    .bg-caption p {font-size: 11px;}
+
+    /*--- Quick Form ---*/
+    .quick-form.home {width: 300px;}
+    .quick-form.home .form-title {padding: 20px;}
+    .quick-form.home h1 {font-size: 27px;}
+    .quick-form.home p {font-size: 12px; letter-spacing: 0;}
+    .quick-form.home form {padding: 20px;}
+    .quick-form.home label {font-size: 16px;}
+    .quick-form.home .form-control {height: 35px;}
+
+    /*--- Main ---*/
+    .main h2 {font-size: 26px;}
+    .main h2 span {font-size: 18px;}
+    .main h3 {font-size: 20px;}
+
+    .main .btn-danger {width: 300px;}
+
+    .bg-red-blue .title-icon {background-size: 65px; padding-left: 75px; font-size: 36px;}
+    .bg-red-blue .title-icon span {font-size: 24px;}
+
+    .steps {width: 80%;}
+
+    /*--- Footer ---*/
+    footer figure img {width: 100px;}
 }
 
 @media (min-width: 992px) {
@@ -304,12 +415,41 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
     .custom-nav .dropdown-menu > li > a {font-size: 12px;}
     .custom-nav > .navbar-nav > li + li {margin-left: 15px;}
 
+    /*--- BG Banner --*/
+    .bg {padding: 60px 0;}
+
+    /*--- Caption ---*/
+    .bg-caption {top: 24.5%; left: 36%;}
+    .bg-caption h2 {font-size: 28px;}
+    .bg-caption h3 {font-size: 20px;}
+    .bg-caption p {font-size: 10px; padding: 5px 10px;}
+
+    /*--- Quick Form ---*/
+    .quick-form.home {width: 250px;}
+    .quick-form.home .form-title {padding: 15px;}
+    .quick-form.home h1 {font-size: 23px;}
+    .quick-form.home p {font-size: 10px; letter-spacing: 0;}
+    .quick-form.home form {padding: 15px;}
+    .quick-form.home label {font-size: 14px;}
+    .quick-form.home .form-control {height: 30px;}
+
+    /*--- Main ---*/
+    .main h2 {font-size: 24px;}
+    .main h2 span {font-size: 16px;}
+    .main h3 {font-size: 20px;}
+
+    .main .btn-danger {width: 300px;}
+
+    .bg-red-blue .title-icon {background-size: 42px; padding-left: 50px; font-size: 24px;}
+    .bg-red-blue .title-icon span {font-size: 16px;}
+
     /* Footer */
     footer p {font-size: 12px;}
     footer p i {padding-right: 4px;}
     footer a {font-size: 12px;}
     footer ul li {font-size: 12px;}
     footer .btn {padding: 6px 25px;}
+    footer figure img {width: 100px;}
     footer nav {text-align: center;}
     footer nav ul + ul {margin-top: 10px;}
     footer nav ul:nth-child(1) {float: none;}
@@ -387,6 +527,15 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
         width: 0;
     }
 
+    /*--- BG Banner --*/
+    .bg {padding: 45px 0;}
+
+    /*--- Caption ---*/
+    .bg-caption {position: relative; top: 0; left: 0; margin-top: 15px; text-align: center;}
+    .bg-caption h2 {font-size: 24px;}
+    .bg-caption h3 {font-size: 18px;}
+    .bg-caption p {font-size: 10px; padding: 5px 10px;}
+
     /*--- Quick Form ---*/
     .quick-form {width: 90%; padding: 45px 0 25px 0;}
     .quick-form .icon {top: -35px; width: 60px; height: 60px;}
@@ -401,13 +550,23 @@ footer nav ul li:nth-child(n+2)::before {color: #9f9f9f; padding-right: 10px;}
 
     .quick-form .input-group-addon {font-size: 16px;}
 
-    /*--- Partners ---*/
-    .partners ul {display: block; width: 100%;}
-    .partners ul li {display: inline-block; width: 32.5%;}
-    .partners ul li:nth-child(1),
-    .partners ul li:nth-child(2) {text-align: center;}
-    .partners ul li:last-child {display: block; width: 32.5%; margin: auto;}
-    .partners ul li img {width: 100%; padding: 0 15px;}
+    .quick-form.home {width: calc(100% - 30px); margin: 0 15px;}
+    .quick-form.home .form-title {padding: 15px;}
+    .quick-form.home h1 {font-size: 27px;}
+    .quick-form.home p {font-size: 12px; letter-spacing: 0;}
+    .quick-form.home form {padding: 15px;}
+    .quick-form.home label {font-size: 14px;}
+    .quick-form.home .form-control {height: 30px;}
+
+    /*--- Main ---*/
+    .main h2 {font-size: 22px;}
+    .main h2 span {font-size: 14px;}
+    .main h3 {font-size: 18px;}
+
+    .main .btn-danger {width: 290px;}
+
+    .bg-red-blue .title-icon {background-size: 40px; padding-left: 45px; font-size: 22px;}
+    .bg-red-blue .title-icon span {font-size: 14px;}
 
     /* Footer */
     footer {text-align: center;}

@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
+import { HomeModule } from './home/home.module';
+
 
 import {
   FooterComponent,
@@ -24,7 +26,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     BrowserModule,
     rootRouting,
     LoginModule,
-    RegisterModule
+    RegisterModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
