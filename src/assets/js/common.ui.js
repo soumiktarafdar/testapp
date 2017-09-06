@@ -34,14 +34,15 @@ $(document).ready(function() {
     });
 
     // Write Your JS Here
-    $(function() {
-        $('.js-imageslider').imageslider({
-            slideItems: '.my-slider-item',
-            slideContainer: '.my-slider-list',
-            slideDistance: 3,
-            slideDuratin: 300,
-            resizable: true,
-            pause: false
+
+    // Partners
+    $(function () {
+        $('.marquee').marquee({
+            duration: 8000,
+            duplicated: true,
+            gap: 00, 
+            direction: 'left',
+            pauseOnHover: true
         });
     });
     

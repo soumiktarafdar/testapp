@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { HomeModule } from './home/home.module';
+import { InvestmentModule } from './investment/investment.module';
 
 
 import {
@@ -27,7 +28,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     rootRouting,
     LoginModule,
     RegisterModule,
-    HomeModule
+    HomeModule,
+    InvestmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
