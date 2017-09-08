@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 
 import { InvestmentComponent } from './investment.component';
 import { SharedModule } from '../shared';
+import { PreferenceModule } from '../preference/preference.module';
+import { HistoryModule } from '../history/history.module';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
@@ -17,7 +19,9 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     homeRouting,
-    SharedModule
+    SharedModule,
+    PreferenceModule,
+    HistoryModule
   ],
   declarations: [
     InvestmentComponent

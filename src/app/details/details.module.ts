@@ -1,14 +1,13 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
+import { DetailsComponent } from './details.component';
 import { SharedModule } from '../shared';
-import { InvestmentModule } from '../investment/investment.module';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: '',
-    component: HomeComponent,
+    path: 'investmentdetails',
+    component: DetailsComponent,
     resolve: {
       
     }
@@ -18,14 +17,13 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     homeRouting,
-    SharedModule,
-    InvestmentModule
+    SharedModule
   ],
   declarations: [
-    HomeComponent
+    DetailsComponent
   ],
   providers: [
     
   ]
 })
-export class HomeModule {}
+export class DetailsModule {}

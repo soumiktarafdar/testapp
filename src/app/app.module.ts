@@ -8,6 +8,14 @@ import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { HomeModule } from './home/home.module';
 import { InvestmentModule } from './investment/investment.module';
+import { PreferenceModule } from './preference/preference.module';
+import { HistoryModule } from './history/history.module';
+import { ConfirmationModule } from './confirmation/confirmation.module';
+import { ForgotpasswordModule } from './forgotpassword/forgotpassword.module';
+import { DetailsModule } from './details/details.module';
+import { PendingModule } from './pending/pending.module';
+import { VerificationModule } from './verification/verification.module';
+import { PrefresultsModule } from './prefresults/prefresults.module';
 
 
 import {
@@ -29,7 +37,15 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     LoginModule,
     RegisterModule,
     HomeModule,
-    InvestmentModule
+    InvestmentModule,
+    PreferenceModule,
+    HistoryModule,
+    ConfirmationModule,
+    ForgotpasswordModule,
+    DetailsModule,
+    PendingModule,
+    VerificationModule,
+    PrefresultsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

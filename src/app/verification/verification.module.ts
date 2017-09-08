@@ -1,14 +1,13 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
+import { VerificationComponent } from './verification.component';
 import { SharedModule } from '../shared';
-import { InvestmentModule } from '../investment/investment.module';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: '',
-    component: HomeComponent,
+    path: 'verification',
+    component: VerificationComponent,
     resolve: {
       
     }
@@ -18,14 +17,13 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     homeRouting,
-    SharedModule,
-    InvestmentModule
+    SharedModule
   ],
   declarations: [
-    HomeComponent
+    VerificationComponent
   ],
   providers: [
     
   ]
 })
-export class HomeModule {}
+export class VerificationModule {}
