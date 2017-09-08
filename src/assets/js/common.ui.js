@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    /* Wow Effect */
-    new WOW().init();
-
     function bindNavbar() {
         if ($(window).width() > 768) {
             $('.navbar-inverse .dropdown').on('mouseover', function(){
