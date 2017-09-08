@@ -16,6 +16,8 @@ import { DetailsModule } from './details/details.module';
 import { PendingModule } from './pending/pending.module';
 import { VerificationModule } from './verification/verification.module';
 import { PrefresultsModule } from './prefresults/prefresults.module';
+import { LinkbankModule } from './linkbank/linkbank.module';
+import { ReinvestmentModule } from './reinvestment/reinvestment.module';
 
 
 import {
@@ -45,7 +47,9 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     DetailsModule,
     PendingModule,
     VerificationModule,
-    PrefresultsModule
+    PrefresultsModule,
+    LinkbankModule,
+    ReinvestmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
