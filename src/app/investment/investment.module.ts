@@ -8,7 +8,7 @@ import { HistoryModule } from '../history/history.module';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: 'investment',
+    path: '',
     component: InvestmentComponent,
     resolve: {
       

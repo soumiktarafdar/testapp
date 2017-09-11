@@ -6,7 +6,7 @@ import { SharedModule } from '../shared';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
-    path: 'login',
+    path: '',
     component: LoginComponent,
     resolve: {
       

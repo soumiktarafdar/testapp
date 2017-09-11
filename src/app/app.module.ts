@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { routes } from './app.router';
 
 
 import { AppComponent } from './app.component';
@@ -49,7 +50,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     VerificationModule,
     PrefresultsModule,
     LinkbankModule,
-    ReinvestmentModule
+    ReinvestmentModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent]
