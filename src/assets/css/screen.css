@@ -174,13 +174,16 @@ header {background: #ffffff; padding: 10px 0; border-top: 10px solid #12498a;}
 
 .main hr {width: 65%; height: 2px; border: none; background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(76,76,76,1) 50%, rgba(255,255,255,0) 100%); background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(76,76,76,1) 50%,rgba(255,255,255,0) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(76,76,76,1) 50%,rgba(255,255,255,0) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );}
 
+#showBox {display: none;}
+
 .main h2 + p,
 .main h2 + ul,
 .main h2 + img,
 .main h2 + div,
 .main h2 + form,
 .main h3 + div,
-.main div + .btn {margin-top: 35px;}
+.main div + .btn,
+.main form + .table-responsive {margin-top: 35px;}
 .main h3 + p,
 .main p + p,
 .main img + h3,
