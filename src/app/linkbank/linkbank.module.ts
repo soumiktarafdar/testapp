@@ -26,4 +26,7 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
     
   ]
 })
-export class LinkbankModule {}
+export class LinkbankModule {
+showHide: false;
+
+}

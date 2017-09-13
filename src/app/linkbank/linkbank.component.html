@@ -13,13 +13,14 @@
                         <p>Do you have any Current / Savings account with the selected bank to open deposit?</p>
 
                         <div class="btn-group btn-fixed-w">
-                            <a href="#" class="btn btn-danger-blue">YES</a>
-                            <a href="#" class="btn btn-danger-blue">NO</a>
+                            <button type="button" (click)="showHide = !showHide" class="btn btn-danger-blue">YES</button>
+                            <button type="button" class="btn btn-danger-blue">NO</button>
                         </div>
 
+                        <div *ngIf="showHide" class="showhidespace">
                         <p>Link Your Bank Account</p>
 
-                        <form action="#" method="post" data-toggle="validator">
+                        <form action="#" method="post">
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
@@ -37,6 +38,8 @@
 
                             <input type="submit" value="Submit" class="btn btn-block no-margin-top">
                         </form>
+                        </div>
+
                     </div>
                 </div>
 
